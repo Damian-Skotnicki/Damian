@@ -33,9 +33,14 @@ console.log("The largest number is " + largest);
 */
 
 //ASSIGNMENT4 triangles
-const num1 = parseFloat(prompt("Enter first number: "));
-const num2 = parseFloat(prompt("Enter second number: "));
-const num3 = parseFloat(prompt("Enter third number: "));
-if(num1 > num2 && num1 > num3) {console.log("Isosceles");}
-else if (num2 = num1 < num3) {console.log("Scalene");}
-else if (num1 = num2 = num3) {console.log("Equilateral");}
+console.log("Please put numbers that add up to 360")
+let num1 =Number(prompt("enter a number Please put numbers that add up to 360"));
+let num2 =Number(prompt("enter a number Please put numbers that add up to 360"));
+let num3 =Number(prompt("enter a number Please put numbers that add up to 360"));
+if(num1 != num2 && num1 != num3 && num2 != num3) {console.log("Isosceles");}
+else if (num1 = num3 && num1!=num2 && num3!=num2 ) {console.log("Scalene");}
+else if (num1 = num2 = num3){console.log("Equilateral");}
+else if (num1 = num2 != num3){console.log("Scalene");}
+else {console.log("something went wrong");}
+
+
